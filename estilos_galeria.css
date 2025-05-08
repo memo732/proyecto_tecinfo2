@@ -1,0 +1,31 @@
+body {
+    background-color: red;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: white;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Crea una cuadrícula adaptable */
+    gap: 15px; /* Espacio entre las imágenes */
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer; /* Indica que la imagen es interactiva */
+    transition: transform 0.3s ease-in-out; /* Animación suave al hacer hover */
+}
+
+.galeria img:hover {
+    transform: scale(1.05); /* Pequeño efecto de zoom al pasar el ratón */
+}

@@ -1,0 +1,68 @@
+body {
+    background-color: red;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para la marquesina y el título */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 10px;
+}
+
+.portada-imagen {
+    max-width: 300px; /* Ajusta el tamaño de la imagen según necesites */
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border-radius: 8px; /* Opcional: para bordes redondeados */
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Para centrar la lista */
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.contenido-principal {
+    padding: 20px;
+    text-align: center;
+}
+
+#miBoton {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#miBoton:hover {
+    background-color: #0056b3;
+}
