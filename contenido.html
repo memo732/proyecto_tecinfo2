@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima Insight: Videos Informativos</title>
+    <link rel="stylesheet" href="contenido.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="site-title">Clima Insight</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#introduccion">Inicio</a></li>
+                    <li><a href="#videos-actuales">Videos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="introduccion" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Descubre las Condiciones Actuales con Nuestros Videos</h2>
+                    <p>En **Clima Insight**, transformamos datos complejos en videos informativos claros y atractivos. Mantente al día con reportes detallados sobre el clima, tendencias ambientales y eventos importantes.</p>
+                    <button class="cta-button" onclick="scrollToSection('videos-actuales')">Explorar Videos Ahora</button>
+                </div>
+                <div class="hero-image">
+                    <img src="https://via.placeholder.com/600x400/ECEFF1/607D8B?text=Visualiza+el+Clima" alt="Visualización de datos climáticos">
+                </div>
+            </div>
+        </section>
+
+        <section id="videos-actuales" class="videos-section">
+            <div class="container">
+                <h2 class="section-title">Videos Recientes y Destacados</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">Todos</button>
+                    <button class="filter-btn" data-category="clima">Clima Diario</button>
+                    <button class="filter-btn" data-category="alertas">Alertas y Pronósticos</button>
+                    <button class="filter-btn" data-category="ambiente">Medio Ambiente</button>
+                </div>
+
+                <div class="video-grid" id="video-grid">
+                    <div class="video-card" data-category="clima">
+                        <div class="video-thumbnail" style="background-image: url('https://via.placeholder.com/320x180/B0BEC5/FFFFFF?text=Clima+Hoy')"></div>
+                        <h3>Reporte del Clima: 29 de Mayo</h3>
+                        <p>Un análisis detallado de las temperaturas, precipitaciones y condiciones generales de hoy.</p>
+                        <button class="watch-button" data-video-src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=bJ9Mh9eP6J1G5F1p">Ver Video</button>
+                    </div>
+                    <div class="video-card" data-category="alertas">
+                        <div class="video-thumbnail" style="background-image: url('https://via.placeholder.com/320x180/90A4AE/FFFFFF?text=Alerta+Tormenta')"></div>
+                        <h3>Alerta Meteorológica: Tormenta en el Pacífico</h3>
+                        <p>Información crucial sobre una tormenta en desarrollo y sus posibles impactos.</p>
+                        <button class="watch-button" data-video-src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=bJ9Mh9eP6J1G5F1p">Ver Video</button>
+                    </div>
+                    <div class="video-card" data-category="ambiente">
+                        <div class="video-thumbnail" style="background-image: url('https://via.placeholder.com/320x180/78909C/FFFFFF?text=Calentamiento')"></div>
+                        <h3>El Impacto del Calentamiento Global</h3>
+                        <p>Explorando las consecuencias del cambio climático en nuestra región y el mundo.</p>
+                        <button class="watch-button" data-video-src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=bJ9Mh9eP6J1G5F1p">Ver Video</button>
+                    </div>
+                    <div class="video-card" data-category="clima">
+                        <div class="video-thumbnail" style="background-image: url('https://via.placeholder.com/320x180/CFD8DC/FFFFFF?text=Pronóstico+Semana')"></div>
+                        <h3>Pronóstico Semanal: Qué Esperar</h3>
+                        <p>Un adelanto de las condiciones climáticas para los próximos siete días.</p>
+                        <button class="watch-button" data-video-src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=bJ9Mh9eP6J1G5F1p">Ver Video</button>
+                    </div>
+                </div>
+
+                <button class="load-more-btn" id="load-more-btn">Cargar Más Videos</button>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Contáctanos</h2>
+                <p>¿Tienes alguna pregunta o sugerencia? ¡Nos encantaría escucharte!</p>
+                <form class="contact-form">
+                    <input type="text" placeholder="Tu Nombre" required>
+                    <input type="email" placeholder="Tu Email" required>
+                    <textarea placeholder="Tu Mensaje" rows="5" required></textarea>
+                    <button type="submit" class="submit-button">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Clima Insight. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><img src="https://via.placeholder.com/24/607D8B/FFFFFF?text=FB" alt="Facebook"></a>
+                <a href="#" aria-label="Twitter"><img src="https://via.placeholder.com/24/607D8B/FFFFFF?text=TW" alt="Twitter"></a>
+                <a href="#" aria-label="Instagram"><img src="https://via.placeholder.com/24/607D8B/FFFFFF?text=IG" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="video-modal" class="video-modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <iframe id="modal-video-iframe" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="contenido.js"></script>
+</body>
+</html>
